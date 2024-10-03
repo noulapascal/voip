@@ -1,0 +1,49 @@
+<dialplan>
+    <versionStamp>1</versionStamp>
+    <patterns>
+        <!-- 4-Digit dialing (for internal extensions) -->
+        <pattern>
+            <key>1</key>
+            <digitMask>xxxx</digitMask>
+            <timeout>0</timeout>
+            <rewriteMask></rewriteMask>
+            <routeTo>gateway</routeTo>
+        </pattern>
+        
+        <!-- 7-Digit dialing -->
+        <pattern>
+            <key>2</key>
+            <digitMask>xxxxxxx</digitMask>
+            <timeout>0</timeout>
+            <rewriteMask></rewriteMask>
+            <routeTo>gateway</routeTo>
+        </pattern>
+        
+        <!-- 10-Digit dialing -->
+        <pattern>
+            <key>3</key>
+            <digitMask>xxxxxxxxxx</digitMask>
+            <timeout>0</timeout>
+            <rewriteMask></rewriteMask>
+            <routeTo>gateway</routeTo>
+        </pattern>
+
+        <!-- 11-Digit dialing (1 + 10 digits) -->
+        <pattern>
+            <key>4</key>
+            <digitMask>1xxxxxxxxxx</digitMask>
+            <timeout>0</timeout>
+            <rewriteMask></rewriteMask>
+            <routeTo>gateway</routeTo>
+        </pattern>
+
+        <!-- 911 Emergency dialing -->
+        <pattern>
+            <key>5</key>
+            <digitMask>911</digitMask>
+            <timeout>0</timeout>
+            <rewriteMask></rewriteMask>
+            <routeTo>gateway</routeTo>
+        </pattern>
+    </patterns>
+</dialplan>

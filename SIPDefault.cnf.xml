@@ -1,0 +1,23 @@
+<default>
+    <callManagerGroup>
+        <members>
+            <member priority="0">
+                <callManager>
+                    <processNodeName>192.168.8.200</processNodeName> <!-- Asterisk server IP -->
+                    <ports>
+                        <sipPort>5060</sipPort>
+                    </ports>
+                </callManager>
+            </member>
+        </members>
+    </callManagerGroup>
+    <loadInformation>sip88xx.14-1-1-0001-125</loadInformation> <!-- Replace with actual SIP firmware version -->
+    <sipProfile>
+        <natEnabled>false</natEnabled>
+        <natAddress></natAddress>
+        <timerRegisterExpires>3600</timerRegisterExpires>
+        <retryInvite>true</retryInvite>
+        <retryRegister>true</retryRegister>
+        <registerWithProxy>true</registerWithProxy>
+    </sipProfile>
+</default>
